@@ -1,0 +1,17 @@
+release/main.o
+release/mainwindow.o
+release/Player.o
+release/DefaultPlayer.o
+release/Enemy.o
+release/EnemyNormal.o
+release/EnemyInvisible.o
+release/EnemyScatter.o
+release/EnemyBoss.o
+release/PlayerBullet.o
+release/EnemyBullet1.o
+release/EnemyBullet2.o
+release/qrc_res.o
+release/moc_mainwindow.o
+release/moc_Player.o
+release/moc_Enemy.o
+release/moc_Bullet.o

@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+    <file>img/player.png</file>
+    <file>img/side_player.png</file>
+	<file>img/player_bullet.png</file>
+	<file>img/enemy_normal.png</file>
+	<file>img/enemy_invisible.png</file>
+	<file>img/enemy_scatter.png</file>
+	<file>img/enemy_boss.png</file>
+	<file>img/enemy_bullet_1.png</file>
+	<file>img/enemy_bullet_2.png</file>
+	<file>img/player_life.png</file>
+    </qresource>
+</RCC>

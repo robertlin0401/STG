@@ -1,0 +1,17 @@
+debug/main.o
+debug/mainwindow.o
+debug/Player.o
+debug/DefaultPlayer.o
+debug/Enemy.o
+debug/EnemyNormal.o
+debug/EnemyInvisible.o
+debug/EnemyScatter.o
+debug/EnemyBoss.o
+debug/PlayerBullet.o
+debug/EnemyBullet1.o
+debug/EnemyBullet2.o
+debug/qrc_res.o
+debug/moc_mainwindow.o
+debug/moc_Player.o
+debug/moc_Enemy.o
+debug/moc_Bullet.o
