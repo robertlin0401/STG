@@ -91,10 +91,8 @@ void Player::addSkillProgress(int p)
 
 void Player::addExp(int e)
 {
-    if (lv == 5) return;
-    
     exp += e;
-    if (exp >= lvUpExp[lv]) {
+    if (lv < 10 && exp >= lvUpExp[lv]) {
         exp -= lvUpExp[lv];
         lv++;
     }

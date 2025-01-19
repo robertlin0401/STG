@@ -2,7 +2,6 @@
 #define DEFAULTPLAYER_H
 
 #include "Player.h"
-#include "PlayerBullet.h"
 #include "Enemy.h"
 
 class DefaultPlayer : public Player {
@@ -34,7 +33,7 @@ class DefaultPlayer : public Player {
         int LDesX, RDesX, sideDesY;
         double opacity = 1, opacityChange = 0.08;
 
-        int damage[6] = { 0, 2, 3, 4, 6, 8 };
+        int damage[11] = { 0, 2, 3, 4, 6, 8, 11, 14, 17, 20, 24 };
 };
 
 #endif // DEFAULTPLAYER_H

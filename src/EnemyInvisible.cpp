@@ -223,7 +223,7 @@ void EnemyInvisible::timeCalculation()
             while (1) {
                 moveDesX = rand() % 400 + 10;
                 if (iniPosX >= 500) moveDesX += 500;
-                moveDesY = rand() % 100 + 360;
+                moveDesY = rand() % 120 + 120;
 
                 moveDirX = moveDesX - getEnemy()->x();
                 moveDirY = moveDesY - getEnemy()->y();

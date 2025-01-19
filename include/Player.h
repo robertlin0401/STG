@@ -8,7 +8,6 @@
 #include <QProgressBar>
 #include <vector>
 #include "Character.h"
-#include "Bullet.h"
 class Enemy;
 
 class Player : public QObject, public Character {
@@ -77,7 +76,7 @@ class Player : public QObject, public Character {
         int desX, desY;
         int HP, skillProgress, skillAutoProgressInterval, skillProgressOnHit;
         int lv, exp;
-        int lvUpExp[5] = { 0, 20, 40, 60, 80 };
+        int lvUpExp[10] = { 0, 20, 40, 60, 80, 100, 120, 140, 160, 180 };
 };
 
 #endif // PLAYER_H

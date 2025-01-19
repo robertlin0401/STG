@@ -11,7 +11,7 @@ EnemyBoss::EnemyBoss(QTimer *t, QGraphicsScene *s, Player *p, QGraphicsPixmapIte
   height(50),
   iniPosX(x),
   iniPosY(y),
-  iniHP(30000),
+  iniHP(15000),
   moveDir(-1),
   respawnENTimer(new QTimer),
   respawnEITimer(new QTimer),
@@ -166,9 +166,9 @@ void EnemyBoss::normalAttack()
     if (!getDoAttack()) return;
 
     int bulletSize[2] = { 4, 15 };
-    int bulletPos[14] = { 10, 40, 70, 100, 260, 290, 320, 480, 510, 540, 700, 730, 760, 790 };
+    int bulletPos[12] = { 30, 70, 110, 250, 290, 330, 470, 510, 550, 690, 730, 770 };
 
-    for (int i = 0; i < 14; ++i) {
+    for (int i = 0; i < 12; ++i) {
         EnemyBullet1 *temp = new EnemyBullet1(getPlayer(), this, bulletSize[0], bulletSize[1]);
         temp->setPixmap(QPixmap(":/img/enemy_bullet_1.png").scaled(bulletSize[0], bulletSize[1]));
         temp->setPos(getEnemy()->x() + bulletPos[i], height + 10);
@@ -209,7 +209,7 @@ void EnemyBoss::respawn()
     
     if (respawnEI) {
         int xPosEI[2] = { 250, 750 };
-        int yPosEI = rand() % 100 + 360;
+        int yPosEI = rand() % 240 + 120;
 
         for (int i = 0; i < 2; ++i) {
             if (ei[i] == NULL || ei[i]->getHP() <= 0) {

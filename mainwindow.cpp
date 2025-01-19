@@ -128,7 +128,7 @@ void MainWindow::isWaveClear()
 
 void MainWindow::isGameOver()
 {
-    if (player->getHP() <= -10000) {
+    if (player->getHP() <= 0) {
         pause();
         QMessageBox *finish = new QMessageBox;
         finish->about(finish, "Game Over", "You lose!");
@@ -191,6 +191,9 @@ void MainWindow::pause()
 
 void MainWindow::resume()
 {
+    int x = ui->graphicsView->mapToGlobal(player->getPlayer()->pos()).x();
+    int y = ui->graphicsView->mapToGlobal(player->getPlayer()->pos()).y();
+    player->setCursorPosOnStart(x, y);
     player->resume();
     for (Enemy *e : enemy)
         e->resume();

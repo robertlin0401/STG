@@ -1,5 +1,6 @@
 #include <QCursor>
 #include "include/DefaultPlayer.h"
+#include "include/PlayerBullet.h"
 
 #include <QDebug>
 
